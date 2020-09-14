@@ -1,0 +1,393 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root {
+	color: rgb(236, 236, 236);
+	background: #8cc9ff;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+canvas {
+	display: block;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: #ff8dc0;
+	text-decoration: none;
+}
+
+
+@import url("https://p.typekit.net/p.css?s=1&k=epn7pmd&ht=tk&f=540.541.35914&a=5485635&app=typekit&e=css");
+
+@font-face {
+font-family:"chinchilla";
+src:url("https://use.typekit.net/af/946481/00000000000000003b9afa01/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/946481/00000000000000003b9afa01/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/946481/00000000000000003b9afa01/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"chinchilla";
+src:url("https://use.typekit.net/af/4efc72/00000000000000003b9afa02/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/4efc72/00000000000000003b9afa02/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/4efc72/00000000000000003b9afa02/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;
+}
+
+@font-face {
+font-family:"jumble";
+src:url("https://use.typekit.net/af/4d2b39/00000000000000003b9b09dd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/4d2b39/00000000000000003b9b09dd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/4d2b39/00000000000000003b9b09dd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-chinchilla { font-family: "chinchilla",sans-serif; }
+.tk-jumble { font-family: "jumble",sans-serif; }
+
+
+.bg {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #8cc9ff;
+	z-index: 0;
+	overflow: hidden;
+	background-image: url(assets/WEB_COMPLETE.svg), none;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.grid-container {
+	height: 100%;
+	display: grid;
+	grid-template-rows: 25vh 25vh 25vh 25vh;
+	grid-template-columns: repeat(4, 25vw);
+
+	grid-template-areas: 
+	"contact logo logo empty1" 
+	"subtitle subtitle subtitle subtitle"
+	"item1 item1 item2 item2"
+	"empty2 empty2 empty2 empty2"
+	;
+
+}
+
+.grid-item{
+	text-align: center;
+	align-content: space-around;
+	margin: auto auto;
+	display:block;
+	}
+
+.contact {
+	grid-area: contact;
+	/* z-index: 2; */
+	width: 12vw;
+}
+
+.logo {
+	z-index: 2;
+	width: 50vw;
+	grid-area: logo;
+}
+
+.empty1 {
+	grid-area: empty1;
+	background-color: lightcyan;
+}
+
+.empty2 {
+	grid-area: empty2;
+	background-color: lightcyan;
+}
+
+.subtitle {
+	grid-area: subtitle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #3c0db0;
+	font-size: 3rem;
+	width: 70vw;
+	height: 100%;
+	/* background-color: red; */
+}
+
+.item {
+	width: 70%;
+	height: 100%;
+	padding: 10px 10px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* color: #3c0db0; */
+	color: #f66174;
+	background-color: #8cc9ff88;
+	border-radius: 50px;
+	font-size: 3rem;
+	z-index: 2;
+}
+
+.item1 {
+	grid-area: item1;
+	/* background-color: green; */
+
+}
+
+.item2 {
+	grid-area: item2;
+	/* background-color: yellowgreen; */
+}
+
+/* .button{
+	position: relative;
+	width: 22vw;
+} */
+
+/* .button1 {
+	grid-area: button1;
+	top: -6%;
+}
+
+.button2 {
+	width: 15vw;
+	grid-area: button2;
+	top: -8%;
+}
+
+.button3 {
+	top: -8%;
+	right: -5vw;
+	grid-area: button3;
+
+}
+
+.button4 {
+	top: -15%;
+	width: 14vw;
+	grid-area: button4;
+
+} */
+
+.spider {
+	position: relative;
+	top: -58%;
+	left: -10vw;
+	grid-area: spider;
+	width: 15vw;	
+	/* z-index: 1; */
+}
+
+.fly {
+	position: absolute;
+	width: 6vw;
+	/* z-index: 0; */
+}
+
+.fly1{
+	top: 33%;
+	left: 5vw;
+}
+
+.fly2{
+	top: 10%;
+	right: 5vw;
+}
+
+.fly3{
+	top: 85%;
+	left: 55vw;
+}
+
+/* reflow for skinny screens */
+@media (max-aspect-ratio: 19/20) {
+  .grid-container{
+
+		/* background-color: lightseagreen; */
+		grid-template-rows: repeat(6, calc(100%/6));
+		grid-template-columns: repeat(6, calc(100vw/6));
+	
+		grid-template-areas: 
+		"logo logo logo logo logo logo" 
+		"subtitle subtitle subtitle subtitle subtitle subtitle"
+		"item1 item1 item1 item1 item1 item1"
+		"item1 item1 item1 item1 item1 item1"
+		"item2 item2 item2 item2 item2 item2"
+		"item2 item2 item2 item2 item2 item2"
+	}
+
+	.spider {
+		top: -10vh;
+		width: 50vw;	
+	}
+
+	.logo {
+		width: 70vw;
+	}
+
+	.button{
+		width: 30vw;
+	}
+
+	.button1{
+		top: 0vh;
+	}
+
+	.button3 {
+		width: 40vw;
+	}
+
+	.button4 {
+		width: 20vw;
+		top: -3%;
+	}
+
+	.contact {
+		width: 18vw;
+	}
+
+}
